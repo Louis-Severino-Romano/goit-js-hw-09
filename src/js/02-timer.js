@@ -39,7 +39,7 @@ const options = {
         refs.datetimePicker.disabled=true;
 
         intervalId=setInterval(()=>{
-            currentTime=Date.now();
+            const currentTime=Date.now();
             if (selectDate < currentTime){
                 clearInterval(intervalId);
             }
