@@ -14,6 +14,7 @@ const refs={
 
 refs.strtBtn.disabled=true;
 
+
 const options = {
     enableTime: true,
     time_24hr: true,
@@ -53,7 +54,6 @@ const options = {
 
         })
       }
-
       
     },
   };
