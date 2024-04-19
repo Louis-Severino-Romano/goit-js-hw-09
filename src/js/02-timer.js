@@ -42,6 +42,8 @@ const options = {
             const currentTime=Date.now();
             if (selectDate < currentTime){
                 clearInterval(intervalId);
+                refs.datetimePicker.disabled=false;
+                return;
             }
             const timeCount= selectDate - currentTime;
             const {days, hours, minutes, seconds}=convertMs(timeCount);
